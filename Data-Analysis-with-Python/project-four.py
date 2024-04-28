@@ -1,3 +1,9 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as py
+from pandas.plotting import register_matplotlib_converters
+
 # Import data (Make sure to parse dates. Consider setting index column to 'date'.)
 df = pd.read_csv('C:\\Belajar Kode\\FreeCodeCamp\\Data Analytics\\fcc-forum-pageviews.csv')
 df['date'] = pd.to_datetime(df['date'])
